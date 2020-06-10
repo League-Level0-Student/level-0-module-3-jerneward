@@ -1,6 +1,8 @@
 
 package _02_loop_variables._3_robot_walk_of_fame;
 
+import java.awt.Color;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class WalkOfFame {
@@ -11,6 +13,8 @@ public class WalkOfFame {
 		// You also need to show the robot to see the result of this line.
 rob.setX(100);
 		// 2. Make the robot draw a star shape. Hint: angle=144.
+rob.penDown();
+rob.setPenColor(Color.black);
 for (int i = 1; i < 5; i++) {
 	rob.move(30);
 	rob.turn(144);
